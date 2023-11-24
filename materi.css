@@ -1,0 +1,334 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fbf8cc;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.left-container {
+    flex: 0.5;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+.right-container {
+    flex: 0.5;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 1px #ddd;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+.right-container img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.judul1 {
+    font-size: 50px;
+    color:#85A389;
+    margin-bottom: 20px;
+}
+
+.deskripsi1 {
+    font-size: 20px;
+    opacity: 80%;
+    text-align: justify;
+}
+
+.judul2{
+    font-size:50px;
+    color:#85A389;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.deskripsi2{
+    font-size:20px ;
+    margin-top: -10px;
+    text-align: justify;
+    opacity: 80%;
+}
+.judul3{
+    font-size:50px;
+    color:#85A389;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.deskripsi3{
+    font-size:20px ;
+    margin-top: -10px;
+    text-align: justify;
+    opacity: 80%;
+}
+.judul4{
+    font-size:50px;
+    color:#85A389;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.deskripsi4{
+    font-size:20px ;
+    margin-top: -10px;
+    text-align: justify;
+    opacity: 80%;
+}
+.judul5{
+    font-size:50px;
+    color:#85A389;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.deskripsi5{
+    font-size:20px ;
+    margin-top: -10px;
+    text-align: justify;
+    opacity: 80%;
+}
+.judul6{
+    font-size:50px;
+    color:#85A389;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.deskripsi6{
+    font-size:20px ;
+    margin-top: -10px;
+    text-align: justify;
+    opacity: 80%;
+}
+.judul7{
+    font-size:50px;
+    color:#85A389;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.deskripsi7{
+    font-size:20px ;
+    margin-top: -10px;
+    text-align: justify;
+    opacity: 80%;
+}
+.judul8{
+    font-size:50px;
+    color:#85A389;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.deskripsi8{
+    font-size:20px ;
+    margin-top: -10px;
+    text-align: justify;
+    opacity: 80%;
+}
+.image1 {
+    display: block;
+    margin-top: -100px; /* Sesuaikan margin agar sejajar dengan judul1 */
+    width: 50%; /* Agar gambar mengisi lebar right-container */
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 70px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.nav-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-button {
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+    color: #85A389;
+    position: relative;
+    margin-right: 10px;
+    -webkit-transform: skew(-21deg);
+    -moz-transform: skew(-21deg);
+    -ms-transform: skew(-21deg);
+    -o-transform: skew(-21deg);
+}
+
+.nav-button span {
+    display: inline-block;
+    transform: skew(21deg);
+    -webkit-transform: skew(21deg);
+    -moz-transform: skew(21deg);
+    -ms-transform: skew(21deg);
+    -o-transform: skew(21deg);
+}
+
+.nav-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: #85A389;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.nav-button:hover {
+    color: #fff;
+}
+
+.nav-button:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.nav-button.active,
+.nav-button:hover {
+color: #fff;
+}
+
+.nav-button.active::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#calculatorTitle {
+    color: #85A389;
+    font-size: 24px;
+    margin: 0;
+    overflow: hidden;
+    border-right: 2px solid #85A389;
+    white-space: nowrap;
+    animation: typing 4s steps(40) infinite, blink-caret 0.5s step-end infinite;
+    -webkit-animation: typing 4s steps(40) infinite, blink-caret 0.5s step-end infinite;
+}
+
+.limit-title {
+    color: #F1C27B;
+}
+
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #85A389;
+    }
+}
+
+
+.right-container {
+    /* Add styling for the right container */
+    width: 30%; /* Adjust the width as needed */
+    float: right; /* Float the container to the right */
+}
+
+.side-image {
+    /* Style for the image */
+    width: 100%; /* Make the image fill the container */
+    border-radius: 8px; /* Optional: add border-radius for rounded corners */
+}
+.right-container {
+    width: 30%;
+    float: right;
+    opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 1s ease-in-out; /* Add a transition effect for opacity */
+}
+
+.side-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.right-container.show {
+    opacity: 1; /* Set opacity to 1 when the 'show' class is applied */
+}
+.right-container {
+    width: 30%;
+    float: right;
+    opacity: 2;
+    transition: opacity 1s ease-in-out;
+}
+
+.side-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px; /* Adjust the margin-top as needed */
+}

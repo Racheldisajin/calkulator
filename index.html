@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Limit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-container">
+            <img src="infinity.png" alt="Logo" class="logo">
+            <div class="logo-text">
+                <h1 id="calculatorTitle">Kalkulator <span class="limit-title">Limit</span></h1>
+            </div>
+        </div>
+        <ul class="nav-container">
+            <li><a class="active nav-button" href="#" onclick="showCalculator()"><span class="btn-txt">Calculator</span></a></li>
+            <li><a class="nav-button" href="profile.html" onclick="showProfile()"><span class="btn-txt">Profile</span></a></li>
+            <li><a class="nav-button" href="materi.html" onclick="showMaterial()"><span class="btn-txt">Materi</span></a></li>
+        </ul>
+    </div>
+    
+        <div class="container">
+        <div class="left-container">
+            <div id="calculatorSection">
+                <h1>Kalkulator <span class="limit-title">Limit</span></h1>
+                <p>Masukkan fungsi dan nilai batasnya </p>
+                <div class="input-container">
+                    <input type="text" id="function" placeholder="Contoh: f(x)= 4x^2 - 3">
+                </div>
+                <div class="input-container">
+                    <input type="text" id="limit" placeholder="Contoh: lim->x= 2">
+                </div>
+                <div class="calculator">                    
+                    <button class="number-button" onclick="appendToFunction('0')">0</button>
+                    <button class="number-button" onclick="appendToFunction('1')">1</button>
+                    <button class="number-button" onclick="appendToFunction('2')">2</button>
+                    <button class="number-button" onclick="appendToFunction('3')">3</button>
+                    <button class="number-button" onclick="appendToFunction('4')">4</button>
+                    <button class="number-button" onclick="appendToFunction('5')">5</button>
+                    <button class="number-button" onclick="appendToFunction('6')">6</button>
+                    <button class="number-button" onclick="appendToFunction('7')">7</button>
+                    <button class="operator-button" onclick="appendToFunction('8')">8</button>
+                    <button class="operator-button" onclick="appendToFunction('9')">9</button>
+                    <button class="operator-button" onclick="appendToFunction('x')">x</button>
+                    <button class="operator-button" onclick="appendToFunction('^')">^</button>
+                    <button class="operator-button" onclick="appendToFunction('+')">+</button>
+                    <button class="operator-button" onclick="appendToFunction('-')">-</button>
+                    <button class="operator-button" onclick="appendToFunction('(')">(</button>
+                    <button class="operator-button" onclick="appendToFunction(')')">)</button>
+                    <button class="operator-button" onclick="appendToFunction('/')">/</button>
+                    <button class="operator-button" onclick="appendToFunction('*')">*</button>
+                    <button class="clear-button" onclick="clearFunction()">C</button>
+                    <button class="calculate-button" onclick="calculateLimit()">Hitung</button>
+                </div>
+                <div class="result-container">
+                    <p id="limitResultText">Hasil limit</p>
+                    <div id="outputLimit"></div>
+                </div>                
+            </div>
+        </div>
+
+        <div class="right-container">
+            <h2></h2>
+            <p>Cara Memakai Kalkulator</p>
+            <p> 1. Pilih menu dan Tampilan Kalkulator Limit</p>
+            <p> 2. Masukkan Fungsi Limit yg akan anda cari Masukkan dengan Benar</p>
+            <p>3. Pilih nilai yg mendekati seperti ^ "Pangkat" yg akan anda hitung Limitnya</p>
+            <p>4. Hitung Limit dengan cara meng-Klic tombol "Hitung" jika salah maka anda bisa meng-Klic tombol "C" yg berrtikan "Clear Entry" untuk menghapus</p>
+            <P>5. Amati hasil dari Limit yg telah anda cari dan yg telah anda masukkan nilainya</P>
+            <P>6. Periksa Panduan Kalkulator jika anda mendapatkan sebuah Kendala</P>
+        </div>
+    </div>
+
+    <!-- Tambahkan elemen untuk grafik fungsi -->
+    <div id="plot" class="container">
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</body>
+</html>
+

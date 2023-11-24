@@ -1,0 +1,284 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fbf8cc; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#calculatorTitle {
+  color: #85A389;
+  font-size: 24px;
+  margin: 0;
+  overflow: hidden;
+  border-right: 2px solid #85A389;
+  white-space: nowrap;
+  animation: typing 4s steps(40) infinite, blink-caret 0.5s step-end infinite;
+  -webkit-animation:;
+}
+
+.limit-title {
+  color: #F1C27B;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.nav-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-button {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+  color: #85A389;
+  position: relative;
+  margin-right: 10px;
+  -webkit-transform:;
+  -moz-transform:;
+  -ms-transform:;
+  -o-transform:;
+}
+
+.nav-button span {
+  display: inline-block;
+  transform: skew(21deg);
+  -webkit-transform:;
+  -moz-transform:;
+  -ms-transform:;
+  -o-transform:;
+}
+
+.nav-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: #85A389;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.nav-button:hover {
+  color: #fff;
+}
+
+.nav-button:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.nav-button.active,
+.nav-button:hover {
+  color: #fff;
+}
+
+.nav-button.active::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.c_home-text1,
+.c_home-text3,
+.c_home-text5 {
+  margin-top: 0;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_hello-i-john-text {
+  color: #03045e;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0;
+  text-transform: none;
+  margin-top: 70px;
+  margin-left: 50px;
+}
+
+.c_based-in-netherland-text {
+  color: #03045e;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0;
+  text-transform: none;
+  margin-top: ;
+  margin-left: 50px;
+}
+
+.c_product-designer-text {
+  color: #85A389;
+  font-size: 80px;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  line-height: 100px;
+  letter-spacing: 0;
+  text-transform: none;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+
+.profile-container {
+  display: flex;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.left-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #fbf8cc;
+}
+
+.right-container {
+  flex: 1;
+}
+
+.c_image-instance {
+  width: 100%;
+  max-width: 350px; /* Ganti sesuai keinginan Anda */
+  box-sizing: border-box;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 100px;
+  margin-top:60px;
+}
+
+.c_home-vector {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* ... Kode CSS sebelumnya ... */
+
+/* Tambahkan style untuk jarak antar profile web developer */
+.web-developer-2,
+.web-developer-3 {
+    margin-top: 60px;
+}
+
+/* Sesuaikan jarak antar elemen teks dan gambar untuk setiap profile web developer */
+.web-developer-1 .c_hello-i-john-text,
+.web-developer-2 .c_hello-i-john-text,
+.web-developer-3 .c_hello-i-john-text {
+    margin-top: 70px;
+}
+
+.web-developer-1 .c_product-designer-text,
+.web-developer-2 .c_product-designer-text,
+.web-developer-3 .c_product-designer-text {
+    margin-bottom: 10px;
+}
+
+.web-developer-1 .c_based-in-netherland-text,
+.web-developer-2 .c_based-in-netherland-text,
+.web-developer-3 .c_based-in-netherland-text {
+    margin-bottom: 40px;
+}
+
+/* Animasi Fade In pada Teks */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Terapkan animasi pada teks */
+.c_hello-i-john-text,
+.c_based-in-netherland-text,
+.c_product-designer-text {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animasi Zoom In pada Gambar */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Terapkan animasi pada gambar */
+.c_image-instance img {
+  animation: zoomIn 1s ease-in-out;
+}
+
+@keyframes typing {
+  0% {
+      width: 0;
+  }
+  50% {
+      width: 100%;
+  }
+  100% {
+      width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+      border-color: transparent;
+  }
+  50% {
+      border-color: #85A389;
+  }
+}
